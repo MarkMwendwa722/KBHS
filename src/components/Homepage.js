@@ -7,9 +7,7 @@ const Homepage = () => {
     
   return (
     
-    <div style={styles.container}>
-      
-      <Header />
+    <div style={styles.container}>      
       <div style={styles.heroSection}>
         <main style={styles.mainContent}>
           <h2>Welcome to Our School</h2>
