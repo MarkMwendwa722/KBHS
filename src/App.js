@@ -1,13 +1,24 @@
 import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Homepage from './components/Homepage';
-import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div style={styles.container}>
+      <Header />
       <Homepage />
+      <Footer />
     </div>
   );
-}
+};
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+  }
+};
 
 export default App;
