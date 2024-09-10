@@ -6,8 +6,11 @@ const Admissions = () => {
     <div className="min-h-screen bg-white flex flex-col items-center">
       
       <header className="bg-custom-green w-full text-center py-4 text-xl  text-white">
-        <div className="container mx-auto flex justify-between items-center px-4 ml-8">
-          <span>KBHS</span>
+        <div className="container mx-auto flex justify-between items-center px-2">
+          <div className='w-full'>
+          <h1 className='text-lg font-semibold   ml-[-9%] text-left'>KBHS</h1>
+          </div>
+          
           <nav>
             <ul className="flex space-x-4">
               <li><Link className="text-white hover:underline" to="/">Home</Link></li>
@@ -22,7 +25,10 @@ const Admissions = () => {
 
       
       <main className="flex flex-col items-center flex-1 w-full">
-        <h1 className="text-lg font-semibold mt-12 mb-4 ">Admission Form</h1>
+        <div className='w-full'>
+        <h1 className="text-lg font-semibold  mt-10 mb-4 ml-[36.5%] text-left ">Admission Form</h1>
+        </div>
+        
         <form className="bg-gray-200 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-lg">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             
