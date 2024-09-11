@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header style={styles.header}>
-      <h1 style={styles.logo}>KBHS</h1>
-      <nav>
+      <span><h1 style={styles.h1}><b>KBHS</b></h1></span>
+      <nav style={styles.nav}>
         <ul style={styles.navList}>
-          <li><a href="#home" style={styles.navLink}>Home</a></li>
-          <li><a href="#about" style={styles.navLink}>About Us</a></li>
-          <li><a href="#admissions" style={styles.navLink}>Admissions</a></li>
-          <li><a href="#contact" style={styles.navLink}>Contact Us</a></li>
+          <li style={styles.navItem}><Link to="/" style={styles.navLink}>Home</Link></li>
+          <li style={styles.navItem}><Link to="/Aboutus" style={styles.navLink}>About us</Link></li>
+          <li style={styles.navItem}><Link to="/admissions" style={styles.navLink}>Admission</Link></li>
+          <li style={styles.navItem}><Link to="/contact" style={styles.navLink}>Contact Us</Link></li>
+          <li style={styles.navItem}><Link to="/facilities" style={styles.navLink}>Facilities</Link></li>
         </ul>
       </nav>
     </header>
@@ -18,26 +20,36 @@ const Header = () => {
 
 const styles = {
   header: {
-    backgroundColor: '#2e8b57', // Green theme color
-    padding: '10px 20px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    backgroundColor: '#2e8b57',
+    padding: '20px',
+    display:'flex',
+    gap: '55%',
   },
-  logo: {
-    color: '#fff',
-    fontSize: '24px',
+  nav: {
+    display: 'flex',
+    justifyContent: 'right',
+    alignItems: 'center',
+    padding: '1px',
   },
   navList: {
-    display: 'flex',
     listStyleType: 'none',
-    
+    margin: 0,
+    padding: 0,
+    justifyContent: 'right',
+    display:'flex',
+  },
+  navItem: {
+    marginRight: '20px',
   },
   navLink: {
     color: '#fff',
-    margin: '0 15px',
     textDecoration: 'none',
     fontSize: '18px',
+  },
+  h1: {
+    color: 'white',
+    font: 'Arial, san-serif',
+    justifyContent: 'left'
   }
 };
 

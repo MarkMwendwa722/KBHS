@@ -1,8 +1,9 @@
 import React from 'react';
-import image from './image4.jpg'; // Import the background image
+import image from './image4.jpg'; 
 import EventSection from './Events/EventsSection';
 import image2 from './image3.jpg'
 import NewsCard from './News/News';
+
 
 const Homepage = () => {
   return (
