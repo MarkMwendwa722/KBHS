@@ -1,42 +1,60 @@
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.footerContent}>
-        <div style={styles.navLinks}>
-          <ul style={styles.footerNavList}>
-            <li style={styles.footerNavItem}><a href="/" style={styles.footerNavLink}>Home</a></li>
-            <li style={styles.footerNavItem}><a href="/about" style={styles.footerNavLink}>About</a></li>
-            <li style={styles.footerNavItem}><a href="/events" style={styles.footerNavLink}>Events</a></li>
-            <li style={styles.footerNavItem}><a href="/contact" style={styles.footerNavLink}>Contact</a></li>
+    <footer className="bg-[#295E4F] text-white p-1 text-center"> 
+      <div className="flex flex-col items-center justify-center">
+        <div className="mb-1"> 
+          <ul className="flex gap-9 list-none justify-center mb-1"> 
+            <li><a href="/" className="text-white no-underline text-sm">Home</a></li> 
+            <li><a href="/about" className="text-white no-underline text-sm">About</a></li>
+            <li><a href="/events" className="text-white no-underline text-sm">Events</a></li>
+            <li><a href="/contact" className="text-white no-underline text-sm">Contact</a></li>
           </ul>
         </div>
-        
-          <p>&copy; 2024 KBHS High School. All rights reserved.</p>
-      
+
+        <div className="bg-custom-gray text-black max-w-xl mx-auto p-2 rounded-md shadow-lg"> 
+          <h3 className="text-lg font-semibold mb-2">Frequently Asked Questions</h3> 
+          <div className="space-y-6"> 
+            <details className="bg-white p-2 rounded-lg shadow">
+              <summary className="font-semibold cursor-pointer text-sm">What is the admission process at KBHS High School?</summary>
+              <p className="pt-1 text-gray-600 text-xs">The admission process involves a school visit, application submission, entrance exam, interview, and acceptance notification.</p>
+            </details>
+            <details className="bg-white p-2 rounded-lg shadow">
+              <summary className="font-semibold cursor-pointer text-sm">Do you have any more questions?</summary>
+              <p className="pt-1 text-gray-600 text-xs">Feel free to ask any additional questions—our team is here to provide all the answers you need!</p>
+            </details>
+          </div>
+          <button className="mt-2 bg-custom-green text-white py-1 px-4 rounded-full hover:bg-green-700 text-sm">Ask Now</button> 
+        </div>
+        <p className="mt-1 text-xs">&copy; 2024 KBHS High School. All rights reserved.</p> 
       </div>
     </footer>
   );
 };
 
 
+
+
+
+
+
 const styles = {
   footer: {
-    backgroundColor: '#2e8b57', // Green theme color
+    backgroundColor: '#295E4F', 
     color: '#fff',
     padding: '20px',
     width: 'auto',
-    textAlign: 'center', // Center text in the footer
+    textAlign: 'center', 
   },
   footerContent: {
     display: 'flex',
-    flexDirection: 'column', // Align everything vertically
-    alignItems: 'center', // Align content to center horizontally
-    justifyContent: 'center', // Center content vertically
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
   },
   navLinks: {
     textAlign: 'center',
-    marginBottom: '10px', // Space below the quick links section
+    marginBottom: '10px', 
   },
   footerTitle: {
     fontSize: '18px',
@@ -57,6 +75,7 @@ const styles = {
   footerInfo: {
     marginTop: '10px',
   },
+  
 };
 
 export default Footer;

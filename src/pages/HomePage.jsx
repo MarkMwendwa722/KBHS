@@ -119,7 +119,7 @@ const styles = {
     marginTop: '20px',
     padding: '10px 20px',
     fontSize: '16px',
-    backgroundColor: '#2e8b57',
+    backgroundColor: '#295E4F',
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
@@ -149,7 +149,7 @@ const styles = {
   button: {
     padding: '10px 20px',
     fontSize: '16px',
-    backgroundColor: '#2e8b57', // Green theme color
+    backgroundColor: '#295E4F', // Green theme color
     color: '#fff',
     border: 'none',
     borderRadius: '5px',

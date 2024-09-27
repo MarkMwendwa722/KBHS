@@ -5,9 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        'custom-green':'#0A6847'
-      }
+      colors: {
+        'custom-green': '#295E4F',
+        'custom-gray': '#D9D9D9', 
+      },
     },
   },
   plugins: [],
