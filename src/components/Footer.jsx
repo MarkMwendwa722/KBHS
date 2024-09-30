@@ -22,7 +22,7 @@ const Footer = () => {
 
 const styles = {
   footer: {
-    backgroundColor: '#2e8b57', // Green theme color
+    backgroundColor: '#295E4F', // Green theme color
     color: '#fff',
     padding: '20px',
     width: 'auto',

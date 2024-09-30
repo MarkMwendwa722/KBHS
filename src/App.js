@@ -2,9 +2,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Homepage from './pages/HomePage';
-import ContactUs from './pages/ContactUs'; 
+import ContactUs from './pages/ContactUs';
 import Admissions from './pages/Admissions';
 import Assignments from './pages/Assignments';
+import AlumniPage from './pages/Alumni';
+import Students from './pages/students';
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
         <main style={styles.mainContent}>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/contact" element={<ContactUs />} /> 
+            <Route path="/contact" element={<ContactUs />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/assignments" element={<Assignments />} />
+            <Route path="/alumni" element={<AlumniPage />} /> {/* Changed to lowercase */}
+            <Route path="/students" element={<Students />} /> {/* Changed to lowercase */}
           </Routes>
         </main>
         <Footer />
@@ -29,11 +33,11 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '100vh',
+    minHeight: '100vh', // Ensures the container takes the full height of the viewport
   },
   mainContent: {
-    flex: 1,
-  }
+    flex: 1, // Makes the main content area take up remaining space
+  },
 };
 
 export default App;
