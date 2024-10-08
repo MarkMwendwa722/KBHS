@@ -1,20 +1,16 @@
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#295E4F] text-white p-1 text-center"> 
-      <div className="flex flex-col items-center justify-center">
-        <div className="mb-1"> 
-          <ul className="flex gap-9 list-none justify-center mb-1"> 
-            <li><a href="/" className="text-white no-underline text-sm">Home</a></li> 
-            <li><a href="/about" className="text-white no-underline text-sm">About</a></li>
-            <li><a href="/events" className="text-white no-underline text-sm">Events</a></li>
-            <li><a href="/contact" className="text-white no-underline text-sm">Contact</a></li>
+    <footer className="bg-[#295E4F] text-white py-10 text-center"> 
+        <p className="text-xl font-semibold">KBHS HIGH SCHOOL</p> 
+          <ul className="flex gap-4 list-none justify-center"> 
+            <li><Link to="/" className="text-white no-underline text-sm">Home</Link></li> 
+            <li><Link to="/about" className="text-white no-underline text-sm">About Us</Link></li>
+            <li><Link to="/admissions-page" className="text-white no-underline text-sm">Admission</Link></li>
+            <li><Link to="/contact" className="text-white no-underline text-sm">Contact</Link></li>
+            <li><Link to="/facilities" className="text-white no-underline text-sm">Facilities</Link></li>
           </ul>
-        </div>
-
-
-        <p className="mt-1 text-xs">&copy; 2024 KBHS High School. All rights reserved.</p> 
-      </div>
     </footer>
   );
 };
