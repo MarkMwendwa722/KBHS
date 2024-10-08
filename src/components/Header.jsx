@@ -49,6 +49,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    gap: '55%',
   },
   dropdownButton: {
     backgroundColor: '#295E4F', // Green color for the dropdown button

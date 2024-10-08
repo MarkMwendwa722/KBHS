@@ -169,31 +169,35 @@ const styles = {
     flexDirection: 'column',
     minHeight: '100vh',
     fontFamily: 'Arial, san-serif',
-    
   },
   heroSection: {
     backgroundImage: `url(${image})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '400px', // Adjusted height for the background section
+    height: '95%', // Adjusted height for the background section
     padding: '20px',
     color: '#fff',
     backgroundAttachment: 'fixed',
   },
   mainContent: {
     textAlign: 'center',
-    margin: '0 auto',
-    paddingTop: '50px',
+    padding: '10%',
     maxWidth: '800px',
     color: 'white',
+    height: '90vh',
+    justifyContent: 'center',
+    alignItems: 'center', // Vertically centers the content
+    margin: '0 auto', // Horizontally centers the content (if maxWidth is in use)
   },
+
   aboutSection: {
     display: 'flex', 
     alignItems: 'center', 
     padding: '100px',
     backgroundColor: '#f5f5f5',
     gap: '50px', 
+    height: '100vh'
   },
   imageWrapper: {
     flex: '1', // Allow the image to take up 1 part of the available space
