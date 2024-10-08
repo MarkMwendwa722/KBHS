@@ -5,6 +5,7 @@ import Homepage from './pages/HomePage';
 import ContactUs from './pages/ContactUs';
 import Admissions from './pages/Admissions';
 import Assignments from './pages/Assignments';
+import Academics from './pages/Academics';
 import AlumniPage from './pages/Alumni';
 import Students from './pages/students';
 import AdmissionsPage from './pages/AdmissionsPage';
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/assignments" element={<Assignments />} />
+            <Route path="/academics" element={<Academics />} />
             <Route path="/alumni" element={<AlumniPage />} /> {/* Changed to lowercase */}
             <Route path="/students" element={<Students />} /> {/* Changed to lowercase */}
             <Route path="/admissions-page" element={<AdmissionsPage />} />

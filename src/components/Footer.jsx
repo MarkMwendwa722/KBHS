@@ -1,42 +1,47 @@
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.footerContent}>
-        <div style={styles.navLinks}>
-          <ul style={styles.footerNavList}>
-            <li style={styles.footerNavItem}><a href="/" style={styles.footerNavLink}>Home</a></li>
-            <li style={styles.footerNavItem}><a href="/about" style={styles.footerNavLink}>About</a></li>
-            <li style={styles.footerNavItem}><a href="/events" style={styles.footerNavLink}>Events</a></li>
-            <li style={styles.footerNavItem}><a href="/contact" style={styles.footerNavLink}>Contact</a></li>
+    <footer className="bg-[#295E4F] text-white p-1 text-center"> 
+      <div className="flex flex-col items-center justify-center">
+        <div className="mb-1"> 
+          <ul className="flex gap-9 list-none justify-center mb-1"> 
+            <li><a href="/" className="text-white no-underline text-sm">Home</a></li> 
+            <li><a href="/about" className="text-white no-underline text-sm">About</a></li>
+            <li><a href="/events" className="text-white no-underline text-sm">Events</a></li>
+            <li><a href="/contact" className="text-white no-underline text-sm">Contact</a></li>
           </ul>
         </div>
-        
-          <p>&copy; 2024 KBHS High School. All rights reserved.</p>
-      
+
+
+        <p className="mt-1 text-xs">&copy; 2024 KBHS High School. All rights reserved.</p> 
       </div>
     </footer>
   );
 };
 
 
+
+
+
+
+
 const styles = {
   footer: {
-    backgroundColor: '#295E4F', // Green theme color
+    backgroundColor: '#295E4F', 
     color: '#fff',
     padding: '20px',
     width: 'auto',
-    textAlign: 'center', // Center text in the footer
+    textAlign: 'center', 
   },
   footerContent: {
     display: 'flex',
-    flexDirection: 'column', // Align everything vertically
-    alignItems: 'center', // Align content to center horizontally
-    justifyContent: 'center', // Center content vertically
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
   },
   navLinks: {
     textAlign: 'center',
-    marginBottom: '10px', // Space below the quick links section
+    marginBottom: '10px', 
   },
   footerTitle: {
     fontSize: '18px',
@@ -57,6 +62,7 @@ const styles = {
   footerInfo: {
     marginTop: '10px',
   },
+  
 };
 
 export default Footer;
