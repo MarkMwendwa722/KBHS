@@ -64,7 +64,102 @@ const HomePage = () => {
         <NewsCard />
     </div>
 
+    
+    <div className="container mx-auto p-2">
+  {/* FAQ Section */}
+  <h2 className="text-center text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+  
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {/* FAQ List */}
+    <div className="space-y-4">
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>What are the admission requirements?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+        Admission requirements include a completed application form, recent academic transcripts, and a letter of recommendation. For more details, please visit our Admissions page.
+        </p>
+      </details>
+
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>How do I apply for admission?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+        You can apply for admission by filling out the online application form available on our website. Additionally, you will need to submit required documents as outlined in the application guidelines.
+        </p>
+      </details>
+
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>How to Contact Us?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+          You can contact us via email or by filling out the contact form available on our website.
+        </p>
+      </details>
+
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>Trust Level of Feedback Application?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+          Our Feedback Application is trusted by over 1000 organizations globally for its accuracy and efficiency.
+        </p>
+      </details>
+
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>What are the school's hours of operation?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+        The school operates from 8:00 AM to 3:00 PM, Monday through Friday. Office hours are from 7:30 AM to 4:00 PM.
+        </p>
+      </details>
+
+      <details className="p-4 bg-white rounded-md shadow">
+        <summary className="flex justify-between items-center font-semibold cursor-pointer">
+          <span>Why should your organization use Feedback Application?</span>
+          <span className="text-blue-500 text-lg">+</span>
+        </summary>
+        <p className="pt-2 text-gray-600 text-sm">
+          It provides detailed reports, tracking mechanisms, and easy communication between teams.
+        </p>
+      </details>
     </div>
+
+    {/* Any Question Section */}
+    <div className="flex flex-col items-center bg-white p-6 rounded-md shadow">
+      
+      <h3 className="text-xl font-bold mb-2">Any Question?</h3>
+      <p className="text-gray-600 text-center text-sm mb-4">
+        You can ask anything you want to know about Feedback.
+      </p>
+      <div className="flex items-center w-full space-x-2">
+        <input
+          type="text"
+          placeholder="Ask here"
+          className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-custom-green"
+        />
+        <button className="bg-custom-green text-white py-2 px-4 rounded-full hover:bg-green-700">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+
+ 
+</div>
+
+
+    </div>
+    
   );
 };
 
