@@ -32,10 +32,13 @@ const Header = () => {
 
       <nav>
         <ul style={styles.navList}>
-          <li><Link to="/" style={styles.navLink}>Home</Link></li>
-          <li><Link to="/about" style={styles.navLink}>About Us</Link></li>
-          <li><Link to="/admissions" style={styles.navLink}>Admissions</Link></li>
-          <li><Link to="/contact" style={styles.navLink}>Contact Us</Link></li>
+
+          <li style={styles.navItem}><Link to="/" style={styles.navLink}>Home</Link></li>
+          <li style={styles.navItem}><Link to="/about" style={styles.navLink}>About us</Link></li>
+          <li style={styles.navItem}><Link to="/admissions-page" style={styles.navLink}>Admission</Link></li>
+          <li style={styles.navItem}><Link to="/contact" style={styles.navLink}>Contact Us</Link></li>
+          <li style={styles.navItem}><Link to="/facilities" style={styles.navLink}>Facilities</Link></li>
+
         </ul>
       </nav>
     </header>
